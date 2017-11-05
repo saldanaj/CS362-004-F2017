@@ -12,7 +12,10 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
+#include <time.h> 
 
-void jqAssert(int returnedInt, char * message); 
+void jqAssert(int returnedInt, char * message);
+
+int random_number(int min_num, int max_num);
 
 #endif /* assertions_h */

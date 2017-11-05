@@ -57,7 +57,8 @@ int main (int argc, char** argv)
 	struct gameState state;
 	struct gameState temp;
 
-	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+	// previous card is sea_hag
+	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, council_room, tribute, smithy};
 	int player1 = 0;
 	int player2 = 1;
 	int players = 2;
