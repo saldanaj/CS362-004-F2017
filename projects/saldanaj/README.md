@@ -1,20 +1,15 @@
 Student: Joaquin Saldana 
-Assignment 4 - Random Test Generator
+Assignment 5 - Debugging
 
-Created random tests for the following cards:
+As per the assignment instructions, i used my unit tests and my random tests to identify issues with a teammates Dominion
+code.  I borrowed Ashley Grealish code to test my functions.
 
-1. Adventurer Card
-2. Council Room Card
-3. Sea Hag
-
-Compiling Instructions
-
-In order to run the random tests the target you will need to run is the following from the makefile:
+Also included in this repo, is my BugsInTeammateCode.txt file as requested.  I ran the following targets from my makefile:
 
 $ make randomTests
 
-The make file also contains a clean target to remove all of the files, except the .h and .c files, created when compiled.  This is done w/ the following commands:
+and
 
-$ make clean
+$ make unittestresults.out 
 
 
