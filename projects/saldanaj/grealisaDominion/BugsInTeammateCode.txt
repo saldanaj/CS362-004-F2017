@@ -1,0 +1,47 @@
+Student: Joaquin Saldana 
+
+I tested the code for Ashley Grealish, my teammate, using my unit test cases and my random test 
+units for the adventurer card.  Below is a list of bugs that were found: 
+
+
+Bug 1
+Title: card_Adventurer function in dominion.h/c is giving player an extra turn 	
+
+Severity: Medium 	
+
+Description: when the card is passed, the player is supposed to only be allowed 2 turns to 
+shuffle an empty deck (if applicable), draw a card, and collect treasure based on the card 
+pulled.  
+
+As result the player data is inaccurate and incorrect.  This could lead to more bugs and 
+errors.  
+
+Symptom: The while look is configurered incorrectly.  The while loop conditional statement is 
+allowing an additional turn.  
+
+Cause/Replicate Bug: calling the card_Adventurer card and checking the state of the game after 
+the function is called. You will see the players who use this card tend to result in larger 
+difference in final results.  
+
+===============================================================================================
+
+Bug 2
+
+Title: error with card_GreatHall function in dominion.h/c giving player negative number
+of actions for the state of the game
+
+Severity: Medium 
+
+Description: when the Great Hall card is passed to the card effect function, in other words, a 
+player played this card, the original intent of the card is to increase the player's number of 
+actions.  However the function is decrementing the number of actions, as a result the player is 
+at a disadvantage.  Furthermore the variable itself, number of actions, could potentially arrive 
+to a negative number if decremented enough and if value is not fully restored.  Ultimately 
+locking a user out of performing any actions.  
+
+Symptom: the function is decrementing rather than incrementing the states number of actions
+Case/Replicate Bug: calling the great_Hall function and monitoring the states number of actions 
+and verify via debbuging the variable at one point is negative.  
+
+Cause/Replicate Bug: ensure a user has the great hall card and play the card
+
